@@ -62,6 +62,7 @@ def suprise():
     print("...")
     print("...")
     print("surprise")
+    return
     """ Create a surprise function for the person that receives your code.
         Feel free to get creative change parameters, print out shapes,  etc.
 
