@@ -28,25 +28,49 @@ def firsthalfsum(array):
 
 
 def divisibleby(array, divisor):
+    lst2 = []
+    for i in array:
+        if array[i] / divisor == 0:
+            lst2.append(array[i])
+    return lst2
     """ Returns each element divisible by the paramater 'divisor'
     """
 
 
 def max(array):
+    maxi = array[0]
+    for i in array:
+        if maxi < array[i]:
+            maxi = array[i]
+            return maxi
     """ Returns the highest number in a list of numbers """
 
 
 def avg(array):
+    length = len(array)
+    sum = 0
+    for i in array:
+        sum = sum + array[i]
+
+    ave = (sum/length)
+    return ave
     """ Returns the average of a list of numbers"""
 
 
 def suprise():
+    print("This function doesn't do anything...")
+    print("...")
+    print("...")
+    print("surprise")
     """ Create a surprise function for the person that receives your code.
         Feel free to get creative change parameters, print out shapes,  etc.
 
         """
 
-def gcd(array):
+'''def gcd(array):
+    greatest = 1
+    for i in array:
+        if i 
     """ Returns the greatest common Divisor of a list of numbers """
     """ Greatest Common Divisor is the greatest number that each number in the list is 
         divisible by. 
@@ -55,6 +79,6 @@ def gcd(array):
                  [33, 66, 99, 101] Greatest Common Divisor = 1
 
                  """
-
+'''
 
 
